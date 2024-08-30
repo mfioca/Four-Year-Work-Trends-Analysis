@@ -36,6 +36,11 @@ def get_activity_counts( df, activity_type ):
     activity_counts = df[df['activity_type'] == activity_type].groupby(['application', 'activity_subtype']).size().reset_index(name='counts')
     return activity_counts
 
+# Creating a function to iterate through unique value counts on 'activity_subtype'
+def get_subtype_counts(df, activity_subtype):
+    subtype_counts = df[df['activity_subtype'] == activity_subtype].groupby(['application', 'activity_type']).size().reset_index(name='counts')
+    return subtype_counts
+
 #looking for most common words in a column to find trends and key items to focus on
 def most_common_words_in_activity_type( df, activity_type, column_name, top_n=10 ):
     # Filter the DataFrame for rows where activity_type matches the specified type
