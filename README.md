@@ -1,5 +1,5 @@
 # Data Science Portfolio Project
-## Analyzing 3 Years of Work Data
+## Analyzing 4 Years of Work Data
 
 ### Overview
 This project showcases my data cleaning, analysis, and visualization skills using data gathered from [RescueTime](https://www.rescuetime.com), a productivity tracking tool used during my work hours over a three-year period. The dataset includes detailed time logs of every application and webpage accessed, which were cleaned, analyzed, and visualized to highlight trends in focus work, application usage, and productivity patterns.
